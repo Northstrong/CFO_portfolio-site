@@ -117,3 +117,47 @@ footer {
 .project-card a:hover {
   color: gold;
 }
+.resume-section {
+  background-color: #111;
+  padding: 50px 20px;
+  color: gold;
+  text-align: center;
+}
+
+.resume-section h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.resume-section p {
+  color: #ddd;
+  font-size: 1em;
+  margin-bottom: 20px;
+}
+
+.resume-highlights {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.resume-highlights li {
+  color: #ccc;
+  font-size: 1em;
+  margin: 5px 0;
+}
+
+.download-btn {
+  display: inline-block;
+  background-color: gold;
+  color: black;
+  padding: 12px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.download-btn:hover {
+  background-color: #ffcc00;
+}
