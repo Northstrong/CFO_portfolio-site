@@ -1,0 +1,39 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #000000; /* black background */
+  color: #FFD700; /* gold text */
+  text-align: center;
+  padding: 40px;
+}
+
+h1 {
+  font-size: 42px;
+  color: #FFD700; /* gold */
+  margin-bottom: 20px;
+}
+
+p, li {
+  font-size: 20px;
+  color: #FFD700; /* gold */
+}
+
+h2 {
+  font-size: 30px;
+  margin-top: 50px;
+  color: #FFD700;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  color: #FFD700;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #fff; /* white when mouse is over link */
+}
