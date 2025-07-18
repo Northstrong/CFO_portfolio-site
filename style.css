@@ -244,4 +244,20 @@ footer {
   font-size: 1rem;
   line-height: 1.7;
 }
+.buy-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: gold;
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.buy-btn:hover {
+  background-color: #ffd700;
+  box-shadow: 0 0 10px gold;
+}
 
