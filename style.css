@@ -81,3 +81,42 @@ body {
   margin-bottom: 1.5em;
   color: #ccc;
 }
+.watch-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.watch-card {
+  background-color: #111;
+  border: 1px solid gold;
+  border-radius: 12px;
+  padding: 1rem;
+  max-width: 300px;
+  color: white;
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.watch-card:hover {
+  transform: scale(1.03);
+}
+
+.watch-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.watch-card h3 {
+  color: gold;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.watch-card p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
