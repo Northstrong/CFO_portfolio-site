@@ -120,3 +120,31 @@ body {
   font-size: 0.95rem;
   line-height: 1.5;
 }
+.watch-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 40px 20px;
+}
+
+.watch-card {
+  background-color: #111;
+  color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(255, 215, 0, 0.15);
+  width: 320px;
+  padding: 20px;
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.watch-card:hover {
+  transform: translateY(-5px);
+}
+
+.watch-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
