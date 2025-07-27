@@ -81,3 +81,51 @@ body {
   margin-bottom: 1.5em;
   color: #ccc;
 }
+.watch-gallery {
+  padding: 40px 20px;
+  background-color: #111;
+  color: #fff;
+  text-align: center;
+}
+
+.watch-gallery h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: gold;
+}
+
+.watch-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.watch-card {
+  background-color: #1a1a1a;
+  padding: 15px;
+  border-radius: 10px;
+  width: 250px;
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
+  transition: transform 0.3s;
+}
+
+.watch-card:hover {
+  transform: scale(1.05);
+}
+
+.watch-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.watch-card h3 {
+  margin: 10px 0 5px;
+  color: gold;
+}
+
+.watch-card p {
+  font-size: 0.9rem;
+  color: #ccc;
+}
