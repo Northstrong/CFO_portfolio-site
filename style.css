@@ -217,6 +217,7 @@ body {
 }
 
 .contact-section .section-title {
+  font-family: 'Playfair Display', serif;
   font-size: 2rem;
   color: #000;
   margin-bottom: 10px;
@@ -226,11 +227,13 @@ body {
   color: #666;
   font-size: 1rem;
   margin-bottom: 30px;
+  font-family: 'Roboto', sans-serif;
 }
 
 .contact-form {
   max-width: 600px;
   margin: 0 auto;
+  padding: 0 10px;
 }
 
 .contact-form .form-group {
@@ -260,10 +263,32 @@ body {
   border-radius: 25px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  font-family: 'Roboto', sans-serif;
 }
 
 .btn-submit:hover {
   background-color: #333;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+  .contact-section {
+    padding: 40px 15px;
+  }
+
+  .contact-section .section-title {
+    font-size: 1.5rem;
+  }
+
+  .contact-section .section-subtitle {
+    font-size: 0.95rem;
+  }
+
+  .btn-submit {
+    width: 100%;
+    padding: 14px;
+    font-size: 1.05rem;
+  }
 }
 .site-footer {
   background-color: #000;
