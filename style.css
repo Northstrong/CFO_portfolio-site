@@ -332,6 +332,54 @@ body {
   height: 25px;
   vertical-align: middle;
 }
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 28px;
+  }
+
+  .hero-content .tagline {
+    font-size: 16px;
+  }
+
+  .btn {
+    display: block;
+    width: 90%;
+    margin: 10px auto;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .watch-card {
+    width: 100%;
+    margin: 15px auto;
+  }
+
+  .about-container,
+  .testimonials,
+  .contact-container,
+  .sell-your-watch {
+    padding: 30px 15px;
+  }
+
+  .testimonial-card {
+    margin: 15px 0;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+  }
+
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  footer .footer-links,
+  footer .footer-social {
+    margin: 10px 0;
+  }
+}
 
 
 
