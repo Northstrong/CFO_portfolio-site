@@ -81,51 +81,67 @@ body {
   margin-bottom: 1.5em;
   color: #ccc;
 }
-.watch-gallery {
-  padding: 40px 20px;
-  background-color: #111;
+/* Watch Grid Section */
+.section {
+  padding: 60px 20px;
+  background-color: #000; /* black background for luxury feel */
   color: #fff;
   text-align: center;
 }
 
-.watch-gallery h2 {
-  font-size: 2rem;
-  margin-bottom: 30px;
+.section-title {
+  font-size: 32px;
+  margin-bottom: 40px;
   color: gold;
 }
 
 .watch-grid {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
   justify-content: center;
+  gap: 30px;
 }
 
 .watch-card {
-  background-color: #1a1a1a;
-  padding: 15px;
-  border-radius: 10px;
+  background-color: #111;
+  border: 1px solid #333;
+  border-radius: 12px;
+  padding: 20px;
   width: 250px;
-  box-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
-  transition: transform 0.3s;
+  box-shadow: 0 4px 20px rgba(255, 215, 0, 0.15);
+  transition: transform 0.3s ease;
 }
 
 .watch-card:hover {
-  transform: scale(1.05);
+  transform: translateY(-8px);
 }
 
 .watch-card img {
   width: 100%;
-  height: auto;
-  border-radius: 8px;
+  border-radius: 10px;
+  margin-bottom: 15px;
 }
 
 .watch-card h3 {
-  margin: 10px 0 5px;
+  font-size: 20px;
   color: gold;
+  margin-bottom: 10px;
 }
 
 .watch-card p {
-  font-size: 0.9rem;
+  font-size: 14px;
   color: #ccc;
 }
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .watch-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .watch-card {
+    width: 90%;
+  }
+}
+
