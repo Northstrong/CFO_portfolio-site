@@ -1604,6 +1604,58 @@ h2 i {
 .nav-logo img {
   height: 50px;
 }
+/* Newsletter Section */
+.newsletter {
+  background-color: #000;
+  color: gold;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.newsletter-container h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+.newsletter-container p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  margin-bottom: 30px;
+  color: #ccc;
+}
+
+.newsletter-form {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.newsletter-form input[type="email"] {
+  padding: 12px;
+  width: 300px;
+  max-width: 100%;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.newsletter-form button {
+  padding: 12px 20px;
+  background-color: gold;
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.newsletter-form button:hover {
+  background-color: #e6c200;
+}
 
 
 
