@@ -1453,6 +1453,46 @@ h2 i {
   color: #c8aa6e;
   margin-right: 10px;
 }
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #000;
+  color: gold;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: gold;
+  text-decoration: none;
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: white;
+}
+
+.nav-logo img {
+  height: 50px;
+}
 
 
 
