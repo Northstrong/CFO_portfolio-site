@@ -791,37 +791,32 @@ body {
   }
 }
 .brands {
-  background-color: #f9f9f9;
   padding: 60px 20px;
   text-align: center;
+  background-color: #fff;
 }
 
 .brands h2 {
+  font-size: 2rem;
   font-family: 'Playfair Display', serif;
-  font-size: 32px;
-  margin-bottom: 40px;
-  color: #000;
+  margin-bottom: 30px;
 }
 
 .brands-logos {
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-wrap: wrap;
-  gap: 30px;
+  justify-content: center;
+  gap: 20px;
 }
 
 .brands-logos img {
   height: 60px;
-  max-width: 120px;
   object-fit: contain;
-  opacity: 0.9;
-  transition: transform 0.3s, opacity 0.3s;
+  transition: transform 0.3s ease;
 }
 
 .brands-logos img:hover {
   transform: scale(1.1);
-  opacity: 1;
 }
 
 /* Responsive */
@@ -834,6 +829,34 @@ body {
     height: 50px;
     max-width: 100px;
   }
+}
+.brands {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.brands h2 {
+  font-size: 2rem;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 30px;
+}
+
+.brands-logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.brands-logos img {
+  height: 60px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.brands-logos img:hover {
+  transform: scale(1.1);
 }
 
 
