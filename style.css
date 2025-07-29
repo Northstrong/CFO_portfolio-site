@@ -553,6 +553,57 @@ body {
     display: none;
   }
 }
+/* === Sell Your Watch Section === */
+.sell-section {
+  background: #f8f8f8;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.sell-section h2 {
+  font-size: 2.2em;
+  margin-bottom: 10px;
+  color: #111;
+  font-family: 'Playfair Display', serif;
+}
+
+.sell-section .subtitle {
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.sell-form {
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.sell-form input,
+.sell-form textarea {
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.sell-form button {
+  padding: 14px;
+  background-color: #c69b6d;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.sell-form button:hover {
+  background-color: #b38855;
+}
 
 
 
