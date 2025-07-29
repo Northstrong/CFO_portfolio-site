@@ -510,6 +510,49 @@ body {
   color: #555;
   margin-bottom: 20px;
 }
+/* === Sticky Navigation Bar === */
+.navbar {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  z-index: 999;
+}
+
+.navbar .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  padding: 15px 20px;
+}
+
+.logo img {
+  width: 140px;
+  height: auto;
+}
+
+.nav-links a {
+  margin-left: 25px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+  color: #111;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #c69b6d;
+}
+
+/* Mobile Nav (Optional but helpful for later) */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+}
 
 
 
