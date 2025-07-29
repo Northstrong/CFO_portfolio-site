@@ -1468,7 +1468,7 @@ h2 i {
 .nav-container {
   display: flex;
   justify-content: space-between;
-  align-items: left;
+  align-items: center;
   width: 100%;
 }
 
