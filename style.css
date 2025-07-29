@@ -1242,6 +1242,23 @@ body {
     width: 28px;
   }
 }
+/* Search & Filter Section */
+.search-filter {
+  text-align: center;
+  padding: 20px;
+  background-color: #f8f8f8;
+}
+
+.search-filter input,
+.search-filter select {
+  padding: 10px;
+  font-size: 16px;
+  margin: 10px 5px;
+  width: 250px;
+  max-width: 90%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
 
 
 

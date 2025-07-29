@@ -78,33 +78,47 @@
   </div>
 </section>
 
+<section class="search-filter">
+  <input type="text" id="searchInput" placeholder="Search watches..." />
+  <select id="brandFilter">
+    <option value="">Filter by brand</option>
+    <option value="rolex">Rolex</option>
+    <option value="audemars">Audemars Piguet</option>
+    <option value="omega">Omega</option>
+    <option value="cartier">Cartier</option>
+    <option value="patek">Patek Philippe</option>
+    <option value="hublot">Hublot</option>
+    <option value="franck">Franck Muller</option>
+  </select>
+</section>
+
 <section id="watches" class="watch-section">
   <div class="container">
     <h2 class="section-title">Featured Timepieces</h2>
     <div class="watch-grid">
       <!-- Watch 1 -->
-      <a href="hublot.html" class="watch-card">
+      <a href="hublot.html" class="watch-card hublot">
         <img src="hublot.jpeg" alt="Hublot Classic Fusion">
         <h3>Hublot Classic Fusion</h3>
         <p>$7,500</p>
       </a>
 
       <!-- Watch 2 -->
-      <a href="tissot.html" class="watch-card">
+      <a href="tissot.html" class="watch-card tissot">
         <img src="tissot.jpeg" alt="Tissot Chrono XL">
         <h3>Tissot Chrono XL</h3>
         <p>$550</p>
       </a>
 
       <!-- Watch 3 -->
-      <a href="rolex.html" class="watch-card">
+      <a href="rolex.html" class="watch-card rolex">
         <img src="rolex.jpeg" alt="Rolex Submariner">
         <h3>Rolex Submariner</h3>
         <p>$12,000</p>
       </a>
 
       <!-- Watch 4 -->
-      <a href="audemars.html" class="watch-card">
+      <a href="audemars.html" class="watch-card audemars">
         <img src="audemars.jpeg" alt="Audemars Piguet Royal Oak">
         <h3>Audemars Piguet Royal Oak</h3>
         <p>$29,000</p>
@@ -344,6 +358,28 @@
   <img src="https://cdn-icons-png.flaticon.com/512/159/159832.png" 
        alt="Call Us" />
 </a>
+
+<script>
+  const searchInput = document.getElementById('searchInput');
+  const brandFilter = document.getElementById('brandFilter');
+  const watches = document.querySelectorAll('.watch-card');
+
+  function filterWatches() {
+    const query = searchInput.value.toLowerCase();
+    const brand = brandFilter.value;
+
+    watches.forEach(watch => {
+      const text = watch.textContent.toLowerCase();
+      const matchesQuery = text.includes(query);
+      const matchesBrand = !brand || watch.classList.contains(brand);
+
+      watch.style.display = (matchesQuery && matchesBrand) ? 'block' : 'none';
+    });
+  }
+
+  searchInput.addEventListener('input', filterWatches);
+  brandFilter.addEventListener('change', filterWatches);
+</script>
 
 </body>
 </html>
