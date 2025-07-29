@@ -858,6 +858,68 @@ body {
 .brands-logos img:hover {
   transform: scale(1.1);
 }
+.testimonials {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.testimonials h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2em;
+  margin-bottom: 40px;
+}
+
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.testimonial-card {
+  background: white;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+}
+
+.client-img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.client-review {
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.95em;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.stars {
+  color: gold;
+  font-size: 1.2em;
+  margin-bottom: 8px;
+}
+
+.badge {
+  font-size: 0.8em;
+  background-color: #eee;
+  color: #444;
+  padding: 5px 12px;
+  border-radius: 20px;
+  display: inline-block;
+}
 
 
 
