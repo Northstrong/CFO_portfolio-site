@@ -1556,10 +1556,6 @@ h2 i {
     padding: 10px 20px;
   }
 
-  .hamburger {
-    display: block;
-  }
-
   .nav-links.active {
     display: flex;
   }
@@ -1710,6 +1706,45 @@ h2 i {
 
 .hero-btn:hover {
   background-color: #b8952c;
+}
+.site-header {
+  background-color: #000;
+  padding: 15px 0;
+  color: white;
+}
+
+.site-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.site-logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  font-family: 'Playfair Display', serif;
+  color: #d4af37;
+}
+
+.site-nav .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  padding: 0;
+  margin: 0;
+}
+
+.site-nav .nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-family: 'Roboto', sans-serif;
+  transition: color 0.3s ease;
+}
+
+.site-nav .nav-links li a:hover {
+  color: #d4af37;
 }
 
 
