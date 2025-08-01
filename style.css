@@ -1749,3 +1749,17 @@ h2 i {
 .newsletter h2 {
   color: gold;
 }
+.hero {
+  height: 100vh;
+  background: url('hero.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.hero h1, .hero p {
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+}
