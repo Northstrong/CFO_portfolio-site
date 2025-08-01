@@ -1746,3 +1746,6 @@ h2 i {
 .site-nav .nav-links li a:hover {
   color: #d4af37;
 }
+.newsletter h2 {
+  color: gold;
+}
