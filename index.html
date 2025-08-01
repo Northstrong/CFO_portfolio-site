@@ -96,6 +96,7 @@
         <h3>Hublot Classic Fusion</h3>
         <p>$7,500</p>
       </a>
+<button onclick="payWithPaystack()">Pay with Paystack</button>
 
       <!-- Watch 2 -->
       <a href="tissot.html" class="watch-card tissot">
@@ -398,6 +399,28 @@
       backToTop.style.display = "none";
     }
   };
+</script>
+<script src="https://js.paystack.co/v1/inline.js"></script>
+
+<script>
+  function payWithPaystack() {
+    var handler = PaystackPop.setup({
+      key: 'sk_live_20fff9b211ac062eaaaa0a91a84652d8b49553b2xxx', // Replace with your public key
+      email: 'buyer@example.com',  // You can dynamically fill this
+      amount: 7500000, // in kobo = ₦75,000
+      currency: "NGN",
+      ref: 'CFO-' + Math.floor((Math.random() * 1000000000) + 1),
+      label: "CFO Luxurious Watch Purchase",
+      onClose: function () {
+        alert('Transaction was cancelled');
+      },
+      callback: function (response) {
+        alert('Payment complete! Reference: ' + response.reference);
+        // Send ref to server for verification if needed
+      }
+    });
+    handler.openIframe();
+  }
 </script>
 
 </body>
