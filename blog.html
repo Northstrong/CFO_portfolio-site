@@ -1,90 +1,165 @@
-<!-- blog.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Luxury Watch Blog - CFO Luxurious Timepieces</title>
-  <meta name="description" content="Explore expert insights and stories from top luxury watch brands like Rolex, Patek Philippe, and more." />
-  <meta property="og:title" content="Luxury Watch Blog - CFO Luxurious Timepieces" />
-  <meta property="og:description" content="Stay informed with articles, trends, and advice on Rolex, AP, Omega, Hublot, Cartier, and more." />
+  <title>Luxury Watch Blog – Expert Insights & Brand History</title>
+  <meta name="description" content="Explore expert insights, brand history, and style advice from top luxury watchmakers like Rolex, AP, Patek, and more.">
+  <meta property="og:title" content="Luxury Watch Blog – Expert Insights & Brand History" />
+  <meta property="og:description" content="Discover the stories behind the most prestigious timepieces. Learn about Rolex, Omega, Cartier, Hublot, and more." />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="https://yourdomain.com/og-image.jpg" />
+  <meta property="og:image" content="your-site.com/images/blog-cover.jpg" />
   <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f8f8f8;
+      margin: 0;
+      padding: 0;
+    }
+    .blog-container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+    .blog-title {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+      color: #111;
+    }
+    .blog-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+    .blog-card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+    .blog-card:hover {
+      transform: translateY(-6px);
+    }
+    .blog-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .blog-card-content {
+      padding: 20px;
+    }
+    .blog-card h3 {
+      margin-top: 0;
+      font-size: 1.3rem;
+      color: #111;
+    }
+    .blog-card p {
+      font-size: 0.95rem;
+      color: #555;
+      line-height: 1.6;
+    }
+    .blog-card a {
+      display: inline-block;
+      margin-top: 12px;
+      color: #c69c6d;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    .blog-card a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="watches.html">Watches</a></li>
-        <li><a href="sell.html">Sell</a></li>
-        <li><a href="escrow.html">Escrow</a></li>
-        <li><a href="blog.html" class="active">Blog</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-  
-  <section class="blog-intro">
-    <div class="container">
-      <h1>Luxury Watch Blog</h1>
-      <p>Get the latest insights, brand news, and horology tips from the world of luxury timepieces.</p>
+  <section class="blog-container">
+    <h1 class="blog-title">🕰️ Watchmaker Chronicles</h1>
+
+    <div class="blog-grid">
+
+      <!-- Rolex -->
+      <div class="blog-card">
+        <img src="blog1.jpg" alt="Rolex Watch">
+        <div class="blog-card-content">
+          <h3>Rolex – The King of Precision and Prestige</h3>
+          <p>Discover how Rolex became the ultimate symbol of timeless status and luxury innovation...</p>
+          <a href="blog1.html">Read More →</a>
+        </div>
+      </div>
+
+      <!-- Audemars Piguet -->
+      <div class="blog-card">
+        <img src="blog2.jpg" alt="Audemars Piguet Watch">
+        <div class="blog-card-content">
+          <h3>Audemars Piguet – Legacy of the Royal Oak</h3>
+          <p>The story of how Audemars Piguet changed the luxury game with the bold Royal Oak...</p>
+          <a href="blog2.html">Read More →</a>
+        </div>
+      </div>
+
+      <!-- Hublot -->
+      <div class="blog-card">
+        <img src="blog3.jpg" alt="Hublot Watch">
+        <div class="blog-card-content">
+          <h3>Hublot – The Art of Fusion in Modern Horology</h3>
+          <p>From carbon fiber to sapphire cases, Hublot fuses innovation with bold design...</p>
+          <a href="blog3.html">Read More →</a>
+        </div>
+      </div>
+
+      <!-- Patek Philippe -->
+      <div class="blog-card">
+        <img src="blog4.jpg" alt="Patek Philippe Watch">
+        <div class="blog-card-content">
+          <h3>Patek Philippe – Generations of Timeless Mastery</h3>
+          <p>Explore why Patek Philippe’s craftsmanship stands as a hallmark of family heritage...</p>
+          <a href="blog4.html">Read More →</a>
+        </div>
+      </div>
+
+      <!-- Omega -->
+      <div class="blog-card">
+        <img src="blog5.jpg" alt="Omega Watch">
+        <div class="blog-card-content">
+          <h3>Omega – Timekeeping in Space and Sport</h3>
+          <p>Omega went to the Moon and timed the Olympics. Find out what makes it so trusted...</p>
+          <a href="blog5.html">Read More →</a>
+        </div>
+      </div>
+
+      <!-- Cartier -->
+      <div class="blog-card">
+        <img src="blog6.jpg" alt="Cartier Watch">
+        <div class="blog-card-content">
+          <h3>Cartier – Elegance Through the Ages</h3>
+          <p>From royalty to red carpets, Cartier brings elegance to every wrist...</p>
+          <a href="blog6.html">Read More →</a>
+        </div>
+      </div>
+
+      <!-- Franck Muller -->
+      <div class="blog-card">
+        <img src="blog7.jpg" alt="Franck Muller Watch">
+        <div class="blog-card-content">
+          <h3>Franck Muller – Master of Complications</h3>
+          <p>Unravel the genius behind Franck Muller's unconventional and brilliant designs...</p>
+          <a href="blog7.html">Read More →</a>
+        </div>
+      </div>
+
+      <!-- Tissot -->
+      <div class="blog-card">
+        <img src="blog8.jpg" alt="Tissot Watch">
+        <div class="blog-card-content">
+          <h3>Tissot – Swiss Craftsmanship Within Reach</h3>
+          <p>Affordable doesn’t mean average. Learn how Tissot keeps Swiss quality accessible...</p>
+          <a href="blog8.html">Read More →</a>
+        </div>
+      </div>
+
     </div>
   </section>
-
-  <section class="blog-list container">
-    <article class="blog-card">
-      <h2>Rolex: The Crown of Luxury</h2>
-      <p>From the Submariner to the Daytona, discover what makes Rolex an unmatched symbol of prestige.</p>
-      <a href="blog1.html">Read More</a>
-    </article>
-
-    <article class="blog-card">
-      <h2>Patek Philippe: Timeless Heritage</h2>
-      <p>Patek Philippe’s legacy of exquisite craftsmanship and family-owned independence is truly unmatched.</p>
-      <a href="blog2.html">Read More</a>
-    </article>
-
-    <article class="blog-card">
-      <h2>Why Collectors Love Audemars Piguet</h2>
-      <p>Explore the legacy of the Royal Oak and how AP continues to impress elite collectors.</p>
-      <a href="blog3.html">Read More</a>
-    </article>
-
-    <article class="blog-card">
-      <h2>The Bold World of Hublot</h2>
-      <p>Learn why Hublot’s fusion of tradition and innovation is changing modern luxury watches.</p>
-      <a href="blog4.html">Read More</a>
-    </article>
-
-    <article class="blog-card">
-      <h2>Cartier Watches: Elegance in Every Curve</h2>
-      <p>Cartier remains a favorite among icons, with timeless styles like the Tank and Ballon Bleu.</p>
-      <a href="blog5.html">Read More</a>
-    </article>
-
-    <article class="blog-card">
-      <h2>Omega’s Precision and Performance</h2>
-      <p>From space missions to the Olympics, Omega's story is one of accuracy and style.</p>
-      <a href="blog6.html">Read More</a>
-    </article>
-
-    <article class="blog-card">
-      <h2>Breitling: Aviation’s Favorite Timepiece</h2>
-      <p>Built for pilots and adventurers, Breitling combines toughness with luxury appeal.</p>
-      <a href="blog7.html">Read More</a>
-    </article>
-
-    <article class="blog-card">
-      <h2>How to Authenticate a Luxury Watch</h2>
-      <p>Learn the key tips and checks to confirm a high-end watch’s authenticity before you buy.</p>
-      <a href="blog8.html">Read More</a>
-    </article>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 CFO Luxurious Timepieces. All rights reserved.</p>
-  </footer>
 </body>
 </html>
