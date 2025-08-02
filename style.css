@@ -1763,3 +1763,34 @@ h2 i {
 .hero h1, .hero p {
   text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
 }
+.escrow-info {
+  padding: 60px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #fff;
+  color: #111;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.escrow-info h2 {
+  margin-top: 40px;
+  color: #bfa34a;
+  font-size: 1.6rem;
+}
+
+.escrow-btn {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 12px 24px;
+  background-color: #bfa34a;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+}
+
+.escrow-btn:hover {
+  background-color: #a68c3a;
+}
