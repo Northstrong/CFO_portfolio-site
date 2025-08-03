@@ -1860,3 +1860,36 @@ h2 i {
     font-size: 14px;
   }
 }
+/* ========== HEADER FIXES FOR MOBILE ========== */
+@media (max-width: 768px) {
+  .site-header .container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    overflow-x: auto; /* Let nav scroll if too long */
+    gap: 10px;
+  }
+
+  .site-logo {
+    color: gold; /* ✅ Make logo gold only on mobile */
+    font-size: 22px;
+    white-space: nowrap;
+  }
+
+  .site-nav .nav-links {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 12px;
+    overflow-x: auto; /* ✅ Let nav scroll horizontally */
+  }
+
+  .site-nav .nav-links li {
+    white-space: nowrap;
+  }
+
+  .site-nav .nav-links li a {
+    font-size: 14px;
+    padding: 5px;
+  }
+}
