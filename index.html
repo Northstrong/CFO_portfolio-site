@@ -35,7 +35,11 @@
 <header class="site-header">
   <div class="container">
     <h1 class="site-logo">CFO</h1>
-    <nav class="site-nav">
+
+    <!-- Toggle button -->
+    <button class="menu-toggle" id="menuToggle">&#9776;</button>
+
+    <nav class="site-nav" id="navMenu">
       <ul class="nav-links">
         <li><a href="#hero">Home</a></li>
         <li><a href="#about">About</a></li>
@@ -319,6 +323,8 @@
       <h4>Quick Links</h4>
       <ul>
         <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#watches">Watches</a></li>
         <li><a href="#sell">Sell Your Watch</a></li>
         <li><a href="#contact">Contact</a></li>
         <li><a href="escrow.html">Secure Payments</a></li>
@@ -424,6 +430,15 @@
     });
     handler.openIframe();
   }
+</script>
+
+<script>
+  const menuToggle = document.getElementById('menuToggle');
+  const navMenu = document.getElementById('navMenu');
+
+  menuToggle.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+  });
 </script>
 
 </body>

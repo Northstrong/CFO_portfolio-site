@@ -1794,3 +1794,51 @@ h2 i {
 .escrow-btn:hover {
   background-color: #a68c3a;
 }
+/* Toggle menu styles */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: gold;
+  margin-left: auto;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .site-header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .site-nav {
+    display: none;
+    flex-direction: column;
+    background-color: #111; /* Match your site background */
+    width: 100%;
+    position: absolute;
+    top: 70px; /* Adjust if needed */
+    left: 0;
+    z-index: 1000;
+  }
+
+  .site-nav.active {
+    display: flex;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    text-align: left;
+    padding: 10px 20px;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .site-logo {
+    color: gold;
+  }
+}
