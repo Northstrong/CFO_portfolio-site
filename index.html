@@ -36,8 +36,12 @@
   <div class="container">
     <h1 class="site-logo">CFO</h1>
 
-    <!-- Toggle button -->
-    <button class="menu-toggle" id="menuToggle">&#9776;</button>
+    <!-- 🔘 Hamburger Button -->
+    <button id="menuToggle" class="hamburger" aria-label="Toggle Menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
 
     <nav class="site-nav" id="navMenu">
       <ul class="nav-links">
@@ -438,6 +442,7 @@
 
   menuToggle.addEventListener('click', () => {
     navMenu.classList.toggle('active');
+    menuToggle.classList.toggle('active');
   });
 </script>
 
